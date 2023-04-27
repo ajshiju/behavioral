@@ -1,0 +1,134 @@
+1.Tell Me about Yourself
+
+My name is Shiju John.I have 16 years of data experience in  data engineerig and data warehousing projects with experience  in 
+differenet rdbms like Teradata,Snowflake,Oracle,Db2 and Etl tools like Informatica and datastage.
+I am  currently working in Capital One for last 7 years and my primary role is to help process and manage large amounts of data efficiently. 
+My main responsibilties include requiremnet gathering , create new metrics based on the requirement.
+I do perform tasks such as data extraction, transformation, loading and integration using structured, semi-structured data.
+I help design and maintain data pipelines, data warehouses, and data lakes. 
+Also involve in production issues and work with the cross functional teams.
+
+2.Strength?
+I belive ,based on the feedback  from my Peers and managers , I  take ownership and  accountabilty  for any task assigned and cordinate
+with the other team members or team 
+
+
+
+3.Weakness
+Too much details .
+Presentation Skill.
+
+
+
+
+
+4.Challenging Project .
+One of the challenging project for me was teh migration project - From on-prem to cloud.
+After working almost 10 years in Onprem and when started migarting  to cloud , like everything was new and   was not able to realte intially
+for few months  like udersatding the  aws services and connecting all services etc. 
+
+
+5.Failed Project
+
+My first project itself was a failure . After 1 year of development ,the project got scrapped.
+It was mainly due to the bad design of the project , where we missed some of the main entities .
+One of the main reason was communciation gap between the clients.
+
+
+
+6.Why are you looking for Change ?
+
+I am looking for a full time job.....
+
+
+7.Tell me about a time you disagreed with someone and how you resolved it.
+
+
+
+8.How can data analytics help the business grow and boost revenue?
+
+Data analytics helps in setting realistic goals and supports decision making. By implementing Big Data analytics, businesses
+may encounter a 5-20% significant increase in revenue. Walmart, Facebook, 
+LinkedIn are some of the companies using big data analytics to boost their income.
+
+
+
+
+
+
+9. Gathering requirements
+Here are some steps you can take to ensure the seamless development of your data project. Note that depending on your team/company PMs will perform some of these steps.
+
+The term end-users denotes people who use the output, and stakeholders denote PMs/BAs/managers.
+
+2.1. Identify the end-users
+The first step is to identify the end-user(s). The request for the project usually comes up during meetings. Understanding the capabilities and preferences of the end-user is crucial for designing an appropriate solution.
+
+End-users (& their preferences) for data projects are usually one of:
+
+Data analysts/Scientists: SQL, File
+Business users: Dashboard, report, Excel
+Software engineers: SQL, APIs
+External clients: Cloud storage, SFTP/FTP, APIs
+2.2. Help end-users define the requirements
+Assume the end-users don’t know everything they want or even that they will clearly define it to you. You can’t get 100% of the requirements right the first time.
+
+Talk with the end-user about their objectives and their difficulties. Understanding the current status of end-user operations will provide valuable insights.
+
+The end-user might say “We want X data”. Help the end-user define requirements by asking the following questions:
+
+Business impact: How does having this data impact the business? What is the measurable improvement in the bottom line, business OKR, etc? Knowing the business impact helps in determining if this project is worth doing.
+Semantic understanding: What does the data represent? What business process generates this data? Knowing this will help you model the data and understand its relation to other tables in your warehouse.
+Data source: Where does the data originate? (an application DB, external vendor via SFTP/Cloud store dumps, API data pull, manual upload, etc).
+Frequency of data pipeline: How fresh does the data need to be? (n minutes, hourly, daily, weekly, etc). Is there a business case for not allowing a higher frequency? What is the highest frequency of data load acceptable by end-users?
+Historical data: Does historical data need to be stored? When loading data into a warehouse, the answer is usually yes.
+Data caveats: Does the data have any caveats? (e.g. seasonality affecting size, data skew, inability to join, or data unavailability). Are there any known issues with upstream data sources, such as late arriving data, or missing data?
+Access pattern: How will the end user access the data? Is access via SQL, dashboard tool, APIs, or cloud storage? In the case of SQL or dashboard access, What are the commonly used filter columns (e.g. date, some business entity)? What is the expected access latency?
+Business rules check (QA): What data quality metrics do the end-users care about? What are business logic-based data quality checks? Which numeric fields should be checked for divergence (e.g. can’t differ by more than x%) across data pulls?
+Data output requirements: What is the data output schema? (column names, API field names, Cloud storage file name/size, etc)
+Answering the above questions will give you a good starting point.
+
+Help the end-users feel invested in the project by following the steps below.
+
+Thank end-users for their time/expertise
+Update them on progress
+Ask & incorporate their feedback
+Recommend solutions(or different ways to do things) for their common issues
+Acknowledge their help & expertise when presenting the project to a wider audience
+End-users who feel invested will root for the project, and help evangelize it. Having end-users who root for the project helps a lot with resource allocation.
+
+Clearly define the requirements, record them (e.g. JIRA, etc), and get sign-off from the stakeholders.
+
+2.3. End-user validation
+Provide end-users with sample data they can analyze (if possible, in the same format as the expected output). Ask the end-users to validate the data (with a timeline). End-users have a deep understanding of data distribution and business rules. Validation includes ensuring that the data has expected business metrics, can be “sliced and diced” as needed and is easy to use by the end-user. This also creates an opportunity to observe the access patterns, such as what filters and columns are being used often.
+
+End-user validating the data may create new requirements and business rule checks.
+
+Record any new requirements or changes (e.g. JIRA, etc), and get sign-off from the stakeholders. Do not start work on the transformation logic until you get a sign-off from the stakeholders.
+
+2.4. Deliver iteratively
+Break down a large project into smaller parts. Work with the stakeholders to decide on a timeline and prioritization. E.g. If you are building an ELT pipeline (REST API => dashboard), you can split it into modeling the data, pulling data from a REST API, loading it into a raw warehouse table, & building a dashboard for the modeled data.
+
+Delivering in small chunks enables a short feedback cycle from the end-user making changing requirements easy to handle. Track your work (tickets, etc) with clear acceptance criteria.
+
+2.5. Handling changing requirements/new features
+Do not accept Adhoc change/feature requests!(unless it’s an emergency). Create a process to
+
+Allow end-users to request changes/features
+Prioritize the change/feature requests with help from stakeholders
+Decide and communicate delivery timelines to end-users
+Educate the end-user on the process of requesting a new feature/change. Following a process will prevent scope creep and allow you to deliver on time.
+
+3. Conclusion
+Dealing with ever-changing requirements, scope creeps, and unspecified assumptions is a frustrating part of a data engineer’s job. But, following the steps specified in this article can help you navigate the challenges of gathering requirements and delivering on time.
+
+The next time you start a data project, follow the steps shown above to
+
+Deliver on time
+Make a huge impact
+Make working on the data projects a joy, and
+Build supportive end-users
+Please leave your questions or comments in the comment section below. If these steps helped, I’d love to hear about how they helped you.
+2.2. Help end-users define the requirements
+
+
